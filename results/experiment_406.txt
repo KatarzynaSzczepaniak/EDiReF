@@ -1,0 +1,56 @@
+MAX_LENGTH = 128
+BATCH_SIZE = 16
+
+NUM_EXPERTS = 2
+TOP_K = 2
+LEARNING_RATE = 2e-5
+NUM_EPOCHS = 5
+
+
+Epoch [1/5]
+      Training loss per 100 training steps: 2.5742199420928955
+      Training loss per 100 training steps: 2.0709253325320707
+      Validation loss per 100 training steps: 1.9165349006652832
+   Training Loss: 1.994, Training Accuracy: 0.641
+   Validation Loss: 1.856, Validation Accuracy: 0.651
+
+Epoch [2/5]
+      Training loss per 100 training steps: 1.7234728336334229
+      Training loss per 100 training steps: 1.8433379761063227
+      Validation loss per 100 training steps: 1.6819915771484375
+   Training Loss: 1.766, Training Accuracy: 0.661
+   Validation Loss: 1.652, Validation Accuracy: 0.677
+
+Epoch [3/5]
+      Training loss per 100 training steps: 1.5399820804595947
+      Training loss per 100 training steps: 1.599011205210544
+      Validation loss per 100 training steps: 1.3883118629455566
+   Training Loss: 1.505, Training Accuracy: 0.709
+   Validation Loss: 1.373, Validation Accuracy: 0.735
+
+Epoch [4/5]
+      Training loss per 100 training steps: 1.2890268564224243
+      Training loss per 100 training steps: 1.2890769856991153
+      Validation loss per 100 training steps: 1.160266637802124
+   Training Loss: 1.206, Training Accuracy: 0.769
+   Validation Loss: 1.136, Validation Accuracy: 0.784
+
+Epoch [5/5]
+      Training loss per 100 training steps: 0.9762986302375793
+      Training loss per 100 training steps: 1.0401016225909243
+      Validation loss per 100 training steps: 1.0189825296401978
+   Training Loss: 0.963, Training Accuracy: 0.818
+   Validation Loss: 0.945, Validation Accuracy: 0.822
+
+
+Emotion classification:
+   Accuracy: 0.829
+   Precision: 0.840
+   Recall: 0.829
+   F1-score: 0.826
+
+ Trigger classification:
+   Accuracy: 0.814
+   Precision: 0.790
+   Recall: 0.814
+   F1-score: 0.798

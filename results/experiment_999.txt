@@ -113,7 +113,14 @@ Epoch [15/15]
    Validation Loss: 2.624, Validation Accuracy: 0.632
 
 
-Test Accuracy: 0.114
-Test Precision: 0.240
-Test Recall: 0.110
-Test F1-score: 0.083
+Emotion classification:
+   Accuracy: 0.028
+   Precision: 0.033
+   Recall: 0.028
+   F1-score: 0.019
+
+ Trigger classification:
+   Accuracy: 0.842
+   Precision: 0.777
+   Recall: 0.842
+   F1-score: 0.775

@@ -44,7 +44,13 @@ Epoch [5/5]
 
 
 Emotion classification:
-   Test Accuracy: 0.436
-   Test Precision: 0.380
-   Test Recall: 0.438
-   Test F1-score: 0.388
+   Accuracy: 0.090
+   Precision: 0.039
+   Recall: 0.090
+   F1-score: 0.047
+
+ Trigger classification:
+   Accuracy: 0.841
+   Precision: 0.806
+   Recall: 0.841
+   F1-score: 0.806
