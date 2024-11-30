@@ -2,4 +2,4 @@ data/*
 trained_models/*
 todo.txt
 results/combinations.xlsx
-results/result_of_early_attempts
+results/result_of_early_attempts/*
