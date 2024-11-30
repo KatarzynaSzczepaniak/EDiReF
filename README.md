@@ -1,0 +1,1 @@
+This project was established for the purpose of my master's thesis. It solves the task of Emotion Discovery and Reasoning its Flip in Conversation (EDiReF), introduced in SemEval 2024. It utilizes the technique of mixture of experts (MoE) and transformers.
