@@ -1,0 +1,1 @@
+Experiments will not work if in MoEForEmotionAndTriggerClassification declaration is self.model = BertModel.from_pretrained(designated_model); must be self.roberta = RobertaModel.from_pretrained('roberta-base')
