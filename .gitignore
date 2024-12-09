@@ -1,5 +1,6 @@
 data/*
 trained_models/*
+planned_experiments.txt
 todo.txt
 results/combinations.xlsx
 results/expert_combinations.txt
