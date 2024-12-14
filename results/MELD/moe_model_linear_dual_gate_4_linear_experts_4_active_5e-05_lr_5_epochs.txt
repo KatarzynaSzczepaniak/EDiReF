@@ -1,0 +1,77 @@
+MAX_LENGTH = 128
+BATCH_SIZE = 32
+
+GATE_TYPE = linear
+EXPERT_TYPE = linear
+NUM_EXPERTS = 4
+TOP_K = 4
+LEARNING_RATE = 5e-05
+NUM_EPOCHS = 5
+
+
+Epoch [1/5]
+      Training loss per 100 training steps: 2.6587085723876953
+      Validation loss per 100 training steps: 1.5135319232940674
+   Training Loss: 1.927, Training Accuracy: 0.647
+   Validation Loss: 1.612, Validation Accuracy: 0.697
+
+Epoch [2/5]
+      Training loss per 100 training steps: 1.450136661529541
+      Validation loss per 100 training steps: 1.000918984413147
+   Training Loss: 1.307, Training Accuracy: 0.759
+   Validation Loss: 1.060, Validation Accuracy: 0.801
+
+Epoch [3/5]
+      Training loss per 100 training steps: 0.8698345422744751
+      Validation loss per 100 training steps: 0.8002114295959473
+   Training Loss: 0.770, Training Accuracy: 0.855
+   Validation Loss: 0.789, Validation Accuracy: 0.850
+
+Epoch [4/5]
+      Training loss per 100 training steps: 0.4576488137245178
+      Validation loss per 100 training steps: 0.7674336433410645
+   Training Loss: 0.524, Training Accuracy: 0.895
+   Validation Loss: 0.783, Validation Accuracy: 0.859
+
+Epoch [5/5]
+      Training loss per 100 training steps: 0.3738251328468323
+      Validation loss per 100 training steps: 0.8995843529701233
+   Training Loss: 0.421, Training Accuracy: 0.914
+   Validation Loss: 0.810, Validation Accuracy: 0.861
+
+
+Task: emotion_classification
+      accuracy: 0.928
+      precision: 0.932
+      recall: 0.928
+      f1:
+          avg: 0.928
+          sadness: 0.918
+          fear: 0.917
+          joy: 0.927
+          disgust: 0.862
+          anger: 0.907
+          neutral: 0.943
+          surprise: 0.904
+
+Task: trigger_classification
+      accuracy: 0.807
+      precision: 0.790
+      recall: 0.807
+      f1: 0.796
+
+
+Emotion confusion matrix
+          sadness   fear      joy       disgust   anger     neutral   surprise  
+sadness   469       0         4         0         4         8         11        
+fear      1         173       2         0         3         5         6         
+joy       11        1         946       2         7         59        25        
+disgust   0         2         0         131       1         11        4         
+anger     8         3         2         1         609       42        18        
+neutral   24        1         27        2         17        2301      51        
+surprise  9         5         8         1         2         28        828       
+
+Trigger confusion matrix
+          No triggerTrigger   
+No trigger4488      453       
+Trigger   678       254       
