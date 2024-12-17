@@ -1,0 +1,85 @@
+MAX_LENGTH = 128
+BATCH_SIZE = 32
+
+GATE_TYPE = linear
+EXPERT_TYPE = mlp
+NUM_EXPERTS = 8
+TOP_K = 2
+LEARNING_RATE = 2e-05
+NUM_EPOCHS = 5
+WEIGHT_TRIGGERS = True
+
+
+Epoch [1/5]
+      Training loss per 100 training steps: 2.842132568359375
+      Training loss per 100 training steps: 2.236073149312841
+      Validation loss per 100 training steps: 2.0930593013763428
+   Training Loss: 2.222, Training Accuracy: 0.688
+   Validation Loss: 2.082, Validation Accuracy: 0.694
+
+Epoch [2/5]
+      Training loss per 100 training steps: 2.036660671234131
+      Training loss per 100 training steps: 1.9913458611705515
+      Validation loss per 100 training steps: 1.671615719795227
+   Training Loss: 1.969, Training Accuracy: 0.708
+   Validation Loss: 1.733, Validation Accuracy: 0.749
+
+Epoch [3/5]
+      Training loss per 100 training steps: 1.6935869455337524
+      Training loss per 100 training steps: 1.572476304403626
+      Validation loss per 100 training steps: 1.2435717582702637
+   Training Loss: 1.549, Training Accuracy: 0.779
+   Validation Loss: 1.306, Validation Accuracy: 0.827
+
+Epoch [4/5]
+      Training loss per 100 training steps: 1.2819116115570068
+      Training loss per 100 training steps: 1.1881543232662843
+      Validation loss per 100 training steps: 0.9247004389762878
+   Training Loss: 1.169, Training Accuracy: 0.842
+   Validation Loss: 1.010, Validation Accuracy: 0.882
+
+Epoch [5/5]
+      Training loss per 100 training steps: 0.9568214416503906
+      Training loss per 100 training steps: 0.9004111390302677
+      Validation loss per 100 training steps: 0.6928637027740479
+   Training Loss: 0.889, Training Accuracy: 0.885
+   Validation Loss: 0.829, Validation Accuracy: 0.907
+
+
+Task: emotion_classification
+      accuracy: 0.889
+      precision: 0.891
+      recall: 0.889
+      f1:
+          avg: 0.887
+          sadness: 0.801
+          joy: 0.907
+          anger: 0.842
+          contempt: 0.747
+          disgust: 0.579
+          neutral: 0.943
+          fear: 0.853
+          surprise: 0.779
+
+Task: trigger_classification
+      accuracy: 0.912
+      precision: 0.895
+      recall: 0.912
+      f1: 0.902
+
+
+Emotion confusion matrix
+          sadness   joy       anger     contempt  disgust   neutral   fear      surprise  
+sadness   841       23        44        82        1         94        25        15        
+joy       6         2651      29        15        0         181       14        14        
+anger     9         33        1233      19        0         96        20        16        
+contempt  35        41        35        639       10        62        6         8         
+disgust   6         7         9         67        108       10        4         5         
+neutral   29        120       35        19        1         6789      20        13        
+fear      17        18        60        3         1         69        863       13        
+surprise  21        40        47        25        1         65        20        575       
+
+Trigger confusion matrix
+          No triggerTrigger   
+No trigger13850     482       
+Trigger   866       179       
