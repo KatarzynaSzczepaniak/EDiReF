@@ -23,7 +23,7 @@ if __name__ == '__main__':
     model = AutoModelForSeq2SeqLM.from_pretrained("facebook/nllb-200-distilled-600M")
 
     df = pd.read_json(f'data/EDiReF_{stage}_data/MaSaC_{stage}_efr.json')
-    df.loc[:, 'utterances'] = df['utterances'].applly(translate_conversation)
+    df.loc[:, 'utterances'] = df['utterances'].apply(translate_conversation)
 
     Path(f'data/EDiReF_{stage}_data/').mkdir(parents=True, exist_ok=True)
     df.to_json(f'data/EDiReF_{stage}_data/MaSaC_translated_{stage}_efr.json')
