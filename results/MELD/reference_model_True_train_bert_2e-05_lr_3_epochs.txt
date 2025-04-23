@@ -1,0 +1,63 @@
+MAX_LENGTH = 128
+BATCH_SIZE = 32
+
+LEARNING_RATE = 2e-05
+NUM_EPOCHS = 3
+TRAIN_BERT = True
+WEIGHT_TRIGGERS = False
+
+
+Epoch [1/3]
+      Training loss per 100 training steps: 2.661261796951294
+      Validation loss per 100 training steps: 1.8242509365081787
+   Training Loss: 2.046, Training Accuracy: 0.633
+   Validation Loss: 1.891, Validation Accuracy: 0.650
+
+Epoch [2/3]
+      Training loss per 100 training steps: 1.7901980876922607
+      Validation loss per 100 training steps: 1.572921872138977
+   Training Loss: 1.784, Training Accuracy: 0.665
+   Validation Loss: 1.644, Validation Accuracy: 0.694
+
+Epoch [3/3]
+      Training loss per 100 training steps: 1.522521734237671
+      Validation loss per 100 training steps: 1.26080322265625
+   Training Loss: 1.492, Training Accuracy: 0.723
+   Validation Loss: 1.343, Validation Accuracy: 0.759
+
+
+Task: emotion_classification
+      accuracy: 0.661
+      precision: 0.635
+      recall: 0.661
+      f1:
+          avg: 0.641
+          sadness: 0.548
+          joy: 0.681
+          surprise: 0.564
+          neutral: 0.755
+          disgust: 0.000
+          fear: 0.037
+          anger: 0.610
+
+Task: trigger_classification
+      accuracy: 0.839
+      precision: 0.777
+      recall: 0.839
+      f1: 0.777
+
+
+Emotion confusion matrix
+          sadness   joy       surprise  neutral   disgust   fear      anger     
+sadness   289       23        32        112       0         0         40        
+joy       20        701       66        204       0         0         60        
+surprise  47        71        499       200       0         0         64        
+neutral   85        161       153       1912      0         0         112       
+disgust   13        7         24        40        0         0         65        
+fear      30        18        32        63        0         5         42        
+anger     43        20        48        89        0         0         483       
+
+Trigger confusion matrix
+          No triggerTrigger   
+No trigger4900      41        
+Trigger   899       33        
