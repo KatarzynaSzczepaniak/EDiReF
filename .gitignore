@@ -1,5 +1,3 @@
 data/*
-trained_models/*
-planned_experiments.txt
-todo.txt
-combinations.xlsx
+other/*
+results_previous/*

@@ -57,7 +57,7 @@ for dataset in "${DATASETS[@]}"; do
             WEIGHT_TRIGGER_FLAG="--WEIGHT_TRIGGERS"
         fi
 
-        echo "Running $SCRIPT $dataset experiment_configs/$CONFIG_FILE $WEIGHT_TRIGGER_FLAG..."
-        python3 "$SCRIPT" "$dataset" "experiment_configs/$CONFIG_FILE" $WEIGHT_TRIGGER_FLAG
+        echo "Running scripts/$SCRIPT $dataset experiment_configs/$CONFIG_FILE $WEIGHT_TRIGGER_FLAG..."
+        python3 "scripts/$SCRIPT" "$dataset" "experiment_configs/$CONFIG_FILE" $WEIGHT_TRIGGER_FLAG
     done
 done
