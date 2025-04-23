@@ -1,6 +1,6 @@
 # Emotion Discovery and Reasoning its Flip in Conversation (EDiReF)
 
-This project was developed as part of my master's thesis and addresses the task of **Emotion Discovery and Reasoning its Flip in Conversation (EDiReF)**, introduced in [SemEval 2024](https://semeval.github.io/). The goal is to detect emotions in dialogue and reason about their changes across conversational turns.
+This project was developed as part of my master's thesis and addresses the task of **Emotion Discovery and Reasoning its Flip in Conversation (EDiReF)**, introduced in [SemEval 2024](https://semeval.github.io/SemEval2024/). The goal is to detect emotions in dialogue and reason about their changes across conversational turns.
 
 The solution is based on the **Mixture of Experts (MoE)** technique, incorporating **transformer-based models** for emotion classification and reasoning.
 
