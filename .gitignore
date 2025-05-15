@@ -1,3 +1,6 @@
 data/
 other/
 results_previous/
+results/*/
+!results/experiment-results.xlsx
+!results/README.md
