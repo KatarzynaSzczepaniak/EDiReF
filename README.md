@@ -9,8 +9,8 @@ The solution is based on the **Mixture of Experts (MoE)** technique, incorporati
 
 🔧 Example usage:
 ```bash
- bash run_experiments.sh --datasets MELD,MaSaC --stage 1
- ```
+./run_experiments.sh --datasets MELD,MaSaC --stage 1
+```
 
 📁 Project structure:
 ```
