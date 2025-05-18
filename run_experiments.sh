@@ -1,8 +1,8 @@
 #!/bin/bash
 
 usage() {
-    echo "Usage: $0 --datasets <dataset1,dataset2,..> --stage <1/2/3>"
-    echo "Example: $0 --datasets MELD,MaSaC --stage 1"
+    echo "Usage: $0 --datasets <dataset1,dataset2,..> --stage <1/2/3> --train_bert <True/False>"
+    echo "Example: $0 --datasets MELD,MaSaC --stage 1 --train_bert True"
     exit 1
 }
 
@@ -15,6 +15,10 @@ while [[ $# -gt 0 ]]; do
             ;;
         --stage)
             STAGE="$2"
+            shift 2
+            ;;
+        --train_bert)
+            TRAIN_BERT="$2"
             shift 2
             ;;
         *)
@@ -54,10 +58,16 @@ for dataset in "${DATASETS[@]}"; do
         if [[ "$dataset" == "MELD" ]]; then
             WEIGHT_TRIGGER_FLAG=""
         else
-            WEIGHT_TRIGGER_FLAG="--WEIGHT_TRIGGERS"
+            WEIGHT_TRIGGER_FLAG="--weight_triggers"
         fi
 
-        echo "Running scripts/$SCRIPT $dataset experiment_configs/$CONFIG_FILE $WEIGHT_TRIGGER_FLAG..."
-        python3 "scripts/$SCRIPT" "$dataset" "experiment_configs/$CONFIG_FILE" $WEIGHT_TRIGGER_FLAG
+        if [[ "$TRAIN_BERT" == "True" ]]; then
+            TRAIN_BERT_FLAG="--train_bert"
+        else
+            TRAIN_BERT_FLAG=""
+        fi
+
+        echo "Running scripts/$SCRIPT $dataset experiment_configs/$CONFIG_FILE $WEIGHT_TRIGGER_FLAG $TRAIN_BERT_FLAG..."
+        python3 "scripts/$SCRIPT" "$dataset" "experiment_configs/$CONFIG_FILE" $WEIGHT_TRIGGER_FLAG $TRAIN_BERT_FLAG
     done
 done

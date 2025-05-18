@@ -1,6 +1,13 @@
-data/
+/data/*
+!data/.gitkeep
+!data/DATA_DOWNLOAD.txt
+
+experiment_configs/generate_experiment_configs.py
+
 other/
-results_previous/
+
 results/*/
 !results/experiment-results.xlsx
 !results/README.md
+
+results_previous/

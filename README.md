@@ -9,7 +9,7 @@ The solution is based on the **Mixture of Experts (MoE)** technique, incorporati
 
 🔧 Example usage:
 ```bash
-./run_experiments.sh --datasets MELD,MaSaC --stage 1
+./run_experiments.sh --datasets MELD,MaSaC --stage 1 --train_bert True
 ```
 
 📁 Project structure:
@@ -20,3 +20,5 @@ scripts/              # Python scripts for training and evaluation
 results/              # Final performance results (cleaned)
 run_experiments.sh    # Main entry point for reproducing experiments
 ```
+
+⚠️ **Note**: This is functional research code. While the code is well-documented and structured for readability, it is maintained as monolithic notebooks and scripts by design. Modularization is not planned.
