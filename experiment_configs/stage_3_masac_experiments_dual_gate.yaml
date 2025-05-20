@@ -5,6 +5,8 @@
   NUM_EPOCHS: 3
   NUM_EXPERTS: 8
   TOP_K: 2
+  MAX_LENGTH: 128
+  BATCH_SIZE: 32
 2:
   EXPERT_TYPE: linear
   GATE_TYPE: linear
@@ -12,6 +14,8 @@
   NUM_EPOCHS: 3
   NUM_EXPERTS: 8
   TOP_K: 2
+  MAX_LENGTH: 128
+  BATCH_SIZE: 32
 3:
   EXPERT_TYPE: linear
   GATE_TYPE: linear
@@ -19,6 +23,8 @@
   NUM_EPOCHS: 3
   NUM_EXPERTS: 8
   TOP_K: 2
+  MAX_LENGTH: 128
+  BATCH_SIZE: 32
 4:
   EXPERT_TYPE: linear
   GATE_TYPE: linear
@@ -26,6 +32,8 @@
   NUM_EPOCHS: 3
   NUM_EXPERTS: 8
   TOP_K: 2
+  MAX_LENGTH: 128
+  BATCH_SIZE: 32
 5:
   EXPERT_TYPE: linear
   GATE_TYPE: linear
@@ -33,6 +41,8 @@
   NUM_EPOCHS: 5
   NUM_EXPERTS: 8
   TOP_K: 2
+  MAX_LENGTH: 128
+  BATCH_SIZE: 32
 6:
   EXPERT_TYPE: linear
   GATE_TYPE: linear
@@ -40,6 +50,8 @@
   NUM_EPOCHS: 5
   NUM_EXPERTS: 8
   TOP_K: 2
+  MAX_LENGTH: 128
+  BATCH_SIZE: 32
 7:
   EXPERT_TYPE: linear
   GATE_TYPE: linear
@@ -47,6 +59,8 @@
   NUM_EPOCHS: 5
   NUM_EXPERTS: 8
   TOP_K: 2
+  MAX_LENGTH: 128
+  BATCH_SIZE: 32
 8:
   EXPERT_TYPE: linear
   GATE_TYPE: linear
@@ -54,6 +68,8 @@
   NUM_EPOCHS: 7
   NUM_EXPERTS: 8
   TOP_K: 2
+  MAX_LENGTH: 128
+  BATCH_SIZE: 32
 9:
   EXPERT_TYPE: linear
   GATE_TYPE: linear
@@ -61,6 +77,8 @@
   NUM_EPOCHS: 7
   NUM_EXPERTS: 8
   TOP_K: 2
+  MAX_LENGTH: 128
+  BATCH_SIZE: 32
 10:
   EXPERT_TYPE: linear
   GATE_TYPE: linear
@@ -68,6 +86,8 @@
   NUM_EPOCHS: 7
   NUM_EXPERTS: 8
   TOP_K: 2
+  MAX_LENGTH: 128
+  BATCH_SIZE: 32
 11:
   EXPERT_TYPE: linear
   GATE_TYPE: linear
@@ -75,6 +95,8 @@
   NUM_EPOCHS: 7
   NUM_EXPERTS: 8
   TOP_K: 2
+  MAX_LENGTH: 128
+  BATCH_SIZE: 32
 12:
   EXPERT_TYPE: linear
   GATE_TYPE: linear
@@ -82,6 +104,8 @@
   NUM_EPOCHS: 3
   NUM_EXPERTS: 8
   TOP_K: 8
+  MAX_LENGTH: 128
+  BATCH_SIZE: 32
 13:
   EXPERT_TYPE: linear
   GATE_TYPE: linear
@@ -89,6 +113,8 @@
   NUM_EPOCHS: 3
   NUM_EXPERTS: 8
   TOP_K: 8
+  MAX_LENGTH: 128
+  BATCH_SIZE: 32
 14:
   EXPERT_TYPE: linear
   GATE_TYPE: linear
@@ -96,6 +122,8 @@
   NUM_EPOCHS: 3
   NUM_EXPERTS: 8
   TOP_K: 8
+  MAX_LENGTH: 128
+  BATCH_SIZE: 32
 15:
   EXPERT_TYPE: linear
   GATE_TYPE: linear
@@ -103,6 +131,8 @@
   NUM_EPOCHS: 3
   NUM_EXPERTS: 8
   TOP_K: 8
+  MAX_LENGTH: 128
+  BATCH_SIZE: 32
 16:
   EXPERT_TYPE: linear
   GATE_TYPE: linear
@@ -110,6 +140,8 @@
   NUM_EPOCHS: 5
   NUM_EXPERTS: 8
   TOP_K: 8
+  MAX_LENGTH: 128
+  BATCH_SIZE: 32
 17:
   EXPERT_TYPE: linear
   GATE_TYPE: linear
@@ -117,6 +149,8 @@
   NUM_EPOCHS: 5
   NUM_EXPERTS: 8
   TOP_K: 8
+  MAX_LENGTH: 128
+  BATCH_SIZE: 32
 18:
   EXPERT_TYPE: linear
   GATE_TYPE: linear
@@ -124,6 +158,8 @@
   NUM_EPOCHS: 5
   NUM_EXPERTS: 8
   TOP_K: 8
+  MAX_LENGTH: 128
+  BATCH_SIZE: 32
 19:
   EXPERT_TYPE: linear
   GATE_TYPE: linear
@@ -131,6 +167,8 @@
   NUM_EPOCHS: 7
   NUM_EXPERTS: 8
   TOP_K: 8
+  MAX_LENGTH: 128
+  BATCH_SIZE: 32
 20:
   EXPERT_TYPE: linear
   GATE_TYPE: linear
@@ -138,6 +176,8 @@
   NUM_EPOCHS: 7
   NUM_EXPERTS: 8
   TOP_K: 8
+  MAX_LENGTH: 128
+  BATCH_SIZE: 32
 21:
   EXPERT_TYPE: linear
   GATE_TYPE: linear
@@ -145,6 +185,8 @@
   NUM_EPOCHS: 7
   NUM_EXPERTS: 8
   TOP_K: 8
+  MAX_LENGTH: 128
+  BATCH_SIZE: 32
 22:
   EXPERT_TYPE: linear
   GATE_TYPE: linear
@@ -152,3 +194,5 @@
   NUM_EPOCHS: 7
   NUM_EXPERTS: 8
   TOP_K: 8
+  MAX_LENGTH: 128
+  BATCH_SIZE: 32

@@ -31,6 +31,11 @@ if [[ -z "${DATASETS[*]}" || -z "$STAGE" ]]; then
     usage
 fi
 
+if [[ "$TRAIN_BERT" != "True" && "$TRAIN_BERT" != "False" ]]; then
+    echo "Error: --train_bert must be 'True' or 'False'"
+    usage
+fi
+
 STAGE_NUM=${STAGE#stage_}
 GATE_TYPES=("single" "dual")
 

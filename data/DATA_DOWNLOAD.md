@@ -2,8 +2,8 @@
 
 This project uses the EDiReF dataset from SemEval 2024.
 
-To download:
-1. Go to: https://github.com/LCS2-IIITD/EDiReF-SemEval2024/tree/main
+## To download:
+1. Go to the [EDiReF-SemEval2024 GitHub repository](https://github.com/LCS2-IIITD/EDiReF-SemEval2024/tree/main)
 2. From `Data/Task B`, download:
    - `MaSaC_train_efr.json`
    - `MaSaC_val_efr.json`
